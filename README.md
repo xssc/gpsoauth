@@ -7,7 +7,7 @@ Direct ruby port of the gpsoauth python lib: https://github.com/simon-weber/gpso
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'gpsoauth'
+gem 'gpsoauth-rb'
 ```
 
 And then execute:
@@ -16,7 +16,11 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install gpsoauth
+    $ gem install gpsoauth-rb
+    
+## Usage
+
+    require 'gpsoauth'
 
 ## License
 
