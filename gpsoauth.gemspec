@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'gpsoauth/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gpsoauth"
+  spec.name          = "gpsoauth-rb"
   spec.version       = Gpsoauth::VERSION
   spec.authors       = ["Sawyer Charles"]
   spec.email         = ["xssc@users.noreply.github.com"]
