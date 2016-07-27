@@ -16,7 +16,7 @@ module Gpsoauth
 			@@cookie    = ""
 
 			def performAuthRequest(data, cookie = @@cookie)
-				response = HTTParty.post(AUTH_URL, body: data, headers: {'User-Agent': USER_AGENT, 'Cookie': cookie})
+				response = HTTParty.post(AUTH_URL, body: data, headers: {'User-Agent' => USER_AGENT, 'Cookie' => cookie})
 				@@cookies = response.headers['Set-Cookie'] if response.headers['Set-Cookie']
 				return Google.parseAuthResponse(response.body)
 			end
